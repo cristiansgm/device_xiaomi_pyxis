@@ -7,12 +7,12 @@
 # Inherit from pyxis device
 $(call inherit-product, device/xiaomi/pyxis/device.mk)
 
-# Inherit some common ArrowOS stuff.
+# Inherit some common Havoc stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_pyxis
+PRODUCT_NAME := havoc_pyxis
 PRODUCT_DEVICE := pyxis
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9 Lite
